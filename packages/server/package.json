@@ -1,0 +1,53 @@
+{
+  "name": "@mmo-explore-marine-plans/server",
+  "version": "1.0.0",
+  "description": "GOV.UK front end service built using Node.js for the Explore Marine Plans digital service",
+  "author": "Marine Management Organisation",
+  "license": "OGL-UK-3.0",
+  "bugs": {
+    "url": "https://github.com/DEFRA/mmo-explore-marine-plans-frontend/issues"
+  },
+  "homepage": "https://explore-marine-plans.marineservices.org.uk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DEFRA/mmo-explore-marine-plans-frontend.git"
+  },
+  "scripts": {
+    "start": "node -r ts-node/register",
+    "test": "ts-node --files tests/index.ts",
+    "dev": "ts-node-dev --files index.tsx",
+    "build": "gulp buildSass"
+  },
+  "dependencies": {
+    "@mis/client": "file:../client",
+    "arcgis-js-api": "4.11.1",
+    "axios": "0.18.0",
+    "express": "4.16.4",
+    "govuk-frontend": "2.11.0",
+    "helmet": "3.21.0",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "ts-node": "8.1.0",
+    "typescript": "3.4.1"
+  },
+  "devDependencies": {
+    "@types/express": "4.16.1",
+    "@types/gulp": "4.0.6",
+    "@types/gulp-sass": "4.0.0",
+    "@types/node": "12.0.0",
+    "@types/node-sass": "4.11.0",
+    "@types/puppeteer": "1.12.4",
+    "@types/react": "16.8.16",
+    "@types/react-dom": "16.8.4",
+    "@types/tape": "4.2.33",
+    "commander": "2.20.0",
+    "gulp": "4.0.2",
+    "gulp-cli": "2.2.0",
+    "gulp-cssimport": "7.0.0",
+    "gulp-sass": "4.0.2",
+    "node-sass": "4.12.0",
+    "puppeteer": "1.15.0",
+    "tape": "4.10.2",
+    "ts-node-dev": "1.0.0-pre.35"
+  }
+}

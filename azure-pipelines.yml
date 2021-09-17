@@ -1,0 +1,125 @@
+trigger:
+  tags:
+    include:
+    - qa-*
+jobs:
+  - job: Build
+    displayName: 'Building'
+    condition: not(startsWith(variables['Build.SourceBranch'], 'refs/tags'))
+    pool:
+      vmImage: 'Ubuntu-16.04'
+
+    steps:
+    - checkout: self
+      persistCredentials: true
+    - script: |
+        echo $(acrPassword) | docker login $(acrName).azurecr.io -u $(acrUsername) --password-stdin
+        docker build -t $(acrName).azurecr.io/app:$(Build.SourceVersion) .
+        docker push $(acrName).azurecr.io/app:$(Build.SourceVersion)
+      displayName: 'Packaging app'
+    - script: |
+        git config --global user.email "ci@enginegroup.com"
+        git config --global user.name "CI bot"
+        if [[ $(Build.SourceBranch) != "refs/heads/master" ]]; then
+          echo "Skipped tagging in $(Build.SourceBranch)"
+          exit 0
+        fi
+        TAG=$(git describe --match "build*" --abbrev=0 --tags $(git rev-list --tags --max-count=1))
+        if [[ -z "$TAG" ]]; then
+          PREVIOUS_BUILD_NUMBER=0
+        else
+          PREVIOUS_BUILD_NUMBER=$(echo $TAG | cut -d'-' -f 2)
+        fi
+        CURRENT_BUILD_NUMBER="$(($PREVIOUS_BUILD_NUMBER + 1))"
+        git tag -a build-$CURRENT_BUILD_NUMBER -m "Build $CURRENT_BUILD_NUMBER from $(Build.BuildId)"
+        git push origin build-$CURRENT_BUILD_NUMBER
+      displayName: 'Tagging build'
+
+  - job: DevDeploy
+    displayName: 'Deploying to DEV'
+    dependsOn: Build
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+
+    pool:
+      vmImage: 'Ubuntu-16.04'
+
+    steps:
+    - script: |
+        cd infra/dev
+        terraform init
+        terraform apply -auto-approve \
+          -var="docker_image=$(Build.SourceVersion)" \
+          -var="registry_username=$(acrUsername)" \
+          -var="registry_password=$(acrPassword)"
+      displayName: 'Releasing DEV'
+
+  - job: DevTag
+    displayName: 'Tagging DEV release'
+    dependsOn: DevDeploy
+    condition: succeeded()
+    pool:
+      vmImage: 'Ubuntu-16.04'
+    steps:
+    - checkout: self
+      persistCredentials: true
+    - script: |
+        git config --global user.email "ci@enginegroup.com"
+        git config --global user.name "CI bot"
+        TAG=$(git describe --match "dev*" --abbrev=0 --tags $(git rev-list --tags --max-count=1))
+        if [[ -z "$TAG" ]]; then
+          PREVIOUS_BUILD_NUMBER=0
+        else
+          PREVIOUS_BUILD_NUMBER=$(echo $TAG | cut -d'-' -f 2)
+        fi
+        CURRENT_BUILD_NUMBER="$(($PREVIOUS_BUILD_NUMBER + 1))"
+        git tag -a dev-$CURRENT_BUILD_NUMBER -m "Dev release $CURRENT_BUILD_NUMBER from $(Build.BuildId)"
+        git push origin dev-$CURRENT_BUILD_NUMBER
+      displayName: 'Tagging DEV release'
+
+  - job: AutomationDev
+    displayName: 'Running automated acceptance tests on DEV'
+    dependsOn: DevDeploy
+    condition: succeeded()
+
+    pool:
+      vmImage: 'Ubuntu-16.04'
+
+    steps:
+    - script: |
+        npm ci
+        npm run bootstrap
+        npm run test:e2e -- -- --url http://mmfp-dev.azurewebsites.net/
+      displayName: 'Testing DEV website'
+
+  - job: QaDeploy
+    displayName: 'Deploying to QA'
+    condition: startsWith(variables['Build.SourceBranch'], 'refs/tags/qa-')
+
+    pool:
+      vmImage: 'Ubuntu-16.04'
+
+    steps:
+    - checkout: self
+    - script: |
+        cd infra/qa
+        terraform init
+        terraform apply -auto-approve \
+          -var="docker_image=$(Build.SourceVersion)" \
+          -var="registry_username=$(acrUsername)" \
+          -var="registry_password=$(acrPassword)"
+      displayName: 'Releasing QA'
+
+  - job: AutomationQa
+    displayName: 'Running automated acceptance tests on QA'
+    dependsOn: QaDeploy
+    condition: succeeded()
+
+    pool:
+      vmImage: 'Ubuntu-16.04'
+
+    steps:
+    - script: |
+        npm ci
+        npm run bootstrap
+        npm run test:e2e -- -- --url http://mmfp-qa.azurewebsites.net/
+      displayName: 'Testing QA website'

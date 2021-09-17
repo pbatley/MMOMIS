@@ -1,0 +1,864 @@
+.webmap {
+  height: 100%;
+}
+
+.placeholder {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 795.9"><path fill="gray" d="M412.7 793.5l7.3 1.7c-7.1.4-14.2.7-21.4.7C180.7 795.9 4 619.4 4 401.5c0-93.9 32.8-179.2 87.6-247l.2 5.8h3.7l3.6-6.7 7.7-6 2.7-4.7 4.5-6.9 1.4 3.6 2.2 3.2-.9 3.2-6.4 8.1-4.2 5.4-2.9 9.5-3.7 6.3-6.7 4.4v5.5l-3 5-1.9 5.9-2.1 5.4-2.6 4.1-3.6 6.3-2.2 10.4-3.6 7.2-4.1 8.1-3.2 10-.5 6.8-.5 5.4-2.8 4.5-3.3 5.9-7.4 17.2-5 14.5-7.3 18.7V346l3.2 7.7 3.1 10 1.3 9-3.3 5.6v16.1l4 6.7 1.9 11 3.9 8.5v28.1l5.2 8.1 3.7 8.1 3.6 8.6 4.1 5.9 1.8 5.9 5 2.7 3.2 4.1 4.5 1.4-4.5-10-5.5-12.7-3.7-11.3-1.9-6.8-2-9.5L65 436l-4.8-6.8v-14.1l3.6 3.6 2.3 7.7 1.7 7.1v7.4l2.9 10 3.5 10 4.2 11.3 5 10.4 3.7 8.1 2.7 6.8 2.7 8.1 4.5 8.6 4.1 4.1 5.4 5.4 3.2 3.2 6.3 7.7 3.6 5.9 4.5 5.9 6.3 4.1 7.7 2.8 6.8 2 6.8 1.9 5.9 3.2h9s5.9 6.3 7.2 7.2 7.2 3.4 7.2 3.4l9 4.8s6.3.4 8.6.4 3.2 1.3 3.2 1.3l4.5 4.1 5.4 5.9 6.3 8.1 5.4 5 4.5 4.5 5 1.8 5.9 3.6 1.8 3.2 5.4-1.4 4.1 1.4 4.5 4.5 2.7 1.8 3.2-1.4 3.2-4.1 1.4-4.1 2.7 1.8 8.1 7.7 2.7 3.6.9 5.4 3.1 4.5.8 5 .2 6.3-2.3 2.7-3.6 4.9v3.3l-.3 3.2-1 4.5 2.4 8.6 5.5 8.1.9 4.5 2.3 5.4 2.7 6.8 5 2.7 5.9 3.6 1.8 2.7 5.4 5.4 8.6 8.1 6.8 4.5 9 5.9 9.5 4.5 8.6 1.8 5.9 3.6 5.4 5 6.8 3.2 6.8 5 5.9 7.2 4.1 5.4 2.7 4.5 4.2 5.9 5.3 5.4 6.8 4.1 8 8.3zm340.6-523.6v5.4l5.4 5.6-3 3.6-3-4.1-6.5-4.5-6.5-2.3-2.2-4.1-2.1-6.3-2.1-8.1-7.1-10.9-2.3 5-2.4 3.2-4.3 4.1-5.9 5-3.5 9v5.9l-2 5.9-3.4 2.3-6.2 2.2-3.1 4.5s-4.5 9.5 0 20.8c0 0-6.7 15.8-2 18.5 4.7 2.7 1.5 13.1 1.5 13.1l3.5 6.3-3.4 3.6s-11.2 10.4-7 21.7l-.7 8.7v7.3l-2.2 9.1v13.7l2.2 12v5.3l4.5 5.5-.7 6.3.6 5.9 1.4 5.4-2.3 4.1-1.1 5 1.9 6.8-2.1 7.2v8l-1.1 4.2v5.5l5.7 3.5 3.8 5.9.6 5.4 4.1 4.5 4.1 2.7.9 6.4.9 6.4 5 5.6 2.3 6.6 7.2 7h5.5l5.9-7.3 4.5-9.2 4.1-6.5.4-4.1 5.1-.5 6.1-6.4 4.9-2.7 2.6 6.8-2 9-7.5 13.1-4.6 8.1v8.3l-1.4 12.6-4.3 11.3-3.9 8.1-5.4 12.7-5.4 8.1-4.5 8.1-5 6.3-4.5 4.5-3.6 7.7-5 7.7-5.9 7.7-.6 7.1c-61.8 71.3-148.4 120-246.2 132.8l.7-3.2 3.2-4 4.5-1.4h5l4.1-6.3 5.4-7.4 5.9-8.7 4.5-5.9 5-2.7 6.8-4.5 4.5-6.3 4-4.5 3.1-2.7 3-8.1-1.4-7.7 4.5-8.7v-6.7l5.4-6.3h3.2l4.1-5.7 3.2-6.3 1.8-2.9 4.5-5.5 1.4-7.3 1.8-5.4-3.6-4.5-5-5-5.9-3.5-7.7-2.3-5.4-.9-9 3.4-10.4-2.2-7.2-2.2-5.8-.7h-6.4l-6.3-.6-5.9 2.5-6.3 5.7h-4.9l-4.1-4.3.4-7.2 1-2.5v-12.2l-2.8-2.8-4.4-4-2.6-3.8h-4.4l-7.5-2.2h-20.5l-4.6-5.2-5.3-4.8-7.4-4.3-7.9-1.9-3.2-5-6.3-5.9v-10.8l-4.5 2.3-1.2 2.7-7.1-.9-5.4-1.8-6.3 2.3-6.3 4.1-6.4 1.8-4.6-.9-1-5-2.5-3.2-4.1 5-4.9.2v-4.7l-.3-5-2-.9-1.8 2.7-1 4.5-2.3 6.3c0 4.5-4.6 6.8-4.6 6.8v-5.9l.3-6.8v-6.3l-3 .5-3.6 3.2-2.2 4.5-9.5 5.9-4.5 4.6-3.2 3.4.9 5-.1 5.9H272l-5.9-3.7-7.2 3.7h-6.8l-5.5-3.2-5.2-5.2-3.1-4.7-4.7-4.6-5-4.1-2.2-3.2v-10l.4-7.7-.4-4H210.5l-5.9-3.4-5-3.1-2.3-20-.9-15.4.5-5.5-6.3-3.6-6.3.9-4.5 2.7-3.2 7.2-1.8 6.8-.5 2.7-3.6 5-3.6 1.8-5.4-2.3-4.1-5.9-7.3-6.3-5.1-7.7-3.8-6.8-3.2-7.7-6.1-4.4v-17.7l2.2-6.1v-17l4.6-5.4 6.2-4.1 6.8-1.4 7.6-1.4 7.2 1.8 7.7 2.4v-10.1l7.4-2.7 9.4 1.8 3.6 1.8 5.2 1.8 3.6 1.8 3.9 4.5 3.1 1.4-.6 3.8v4.5l4 6.7 4.7 9.5 4.3 6.3h9.1l.5-5-1.4-8.3-1.8-6.9-1.8-5-4.5-7.3-1.4-10 1.4-4.2 4.5-9 4.1-9.1 1.4-4.5 4.1-4.5 2.3-3.3 5.4-8.9 2.3-10.8.9-5.8-2.3-6.2-3.6-3.9-1.8-2.7.1-2.9h4.9l5.9-3.8 2.2-4.4 1.1-4.9V341l4.3-2.9h12.7l4-5.1-.5-6.8v-6.9l3.2-6.8 5.2-4.2 10.1-8.9c1.8-3.6 4.1-4.4 4.1-4.4l-.9 6.5 2.3 4.6 1 4.9h3.1l3.2-5.1 3.2-4.4 3.6-4.7 5.9-4.6 5.9-3.2 4.1-4.1c3.6-2.7 1.8-4.7 1.8-4.7l-2.7-6.9-3.2-1.2-3.6 4.6-.6 6.1H316l-7.2-3-4.5-3.2-2.7-7.4 3.2-3.7 1.4-3.7 1.8-2.7 5.9-.9c5.4 0 6.3-5.4 6.3-5.4l-7.3.5-7.7 2.3-5.5.5-5.5 2.3-6.5 5.4-4.1 3.6-6 5.8v-4.5l1.9-5.7 8.8-7 4.2-2.7 6.8-1.8H313l2.5-4.3h7l4.5-6.1 6.4-7 3.8-.5 6.7-1.7 4.3-.4c1.8-4.1-5.4-12-5.4-12l-3.2-9.1-6.4-6.3s-5.8-3.2-6.3-4.5-8.2-6.8-8.2-6.8c-.5-5.9-3.6-6.8-4.1-10.4s-4.1-10-4.1-10c-3.2-10.9-8.6-9-8.6-9l-2.4 3.2-2.5 4.5-6.4 3.2c-2.7 3.2-6.7-.7-6.7-.7v-9.2c7.6-1.8 5.4-6.8 5.4-6.8l-7.5-2.3-7.1-5.1c-3.6-4.2-12.2-1.7-12.2-1.7l-5.6 1.7-3.3 5.1-2.3 5.4.9 4.5-1.4 10.9.4 8.6 2.7 6.8-1.4 7.2-2.8 4.5-2.5 5.4-9.5 5.4-3.7 7.2v10l.3 4.5c-1.8 3.6-3.6 3.6-3.6 3.6L227 233l2.3-14.4-3.1-5.3-6.8-4.8-5.9-4.9-5.7-5.2h-7.4l-5.6-4.6.2-12.5c-1.8-10.9 11.3-18.2 11.3-18.2 1.8-3.6 6.3-5.5 6.3-5.5l5.9-4.6 4.1-2.8 2.3-5.8 4.5-4.5 5.4-1.4 2.3 4.5 3.2 2.3 5.4-1.8 8.6-3.6 1.4-5.4-2.3-9c-4.1 0-1.8-4.5-1.8-4.5l6.7-3.6 6.9-4.1 5-7.2.9-5.4 2.3-5.9 6.8-1.9 2.7 5.1-.5 5.5-1.8 2.7 4.5 4.1-5.4 8.6-3.2 4.5-4.5 1.8-5 3.2.9 3.2 4.1 2.3 5.4 1.4 2.7 4.6 1.8 5.6 4.1 2.8 5.4 4.9h7.3l7.2 1.5.9-3.8-5.4-5.4-3.2-4.3 1.8-1.9 4.4 4.1h3.8l.9-6.4-2.5-8.8h-3.4l-4.1-4.4.9-3.2h3.6l3.2 3.4 4.1 4.2h2.2l2.3-4.5-.5-8.7 1.8-2.8 1.8-2.3-5.9-5.9-5.9-5-4.6-2.7.4-5.9 3.9-5.5-2.8-5.2-6.8-4.6V70l-6.1-3.2-10-.5-6.8 1.4-8.7-2.3-7.2 1.4-4.5-3.7v-6.3l-3.4.5-5 5.4-6.7 3.2-5 1.4-5.5 4.7-2 4.4-4.6 3.3-8 5.2v2.4l-2.1 3.2-2.9-3.2-2.9-4.1-4.7-3.5-2.5-2 4.5-3.2 4-4.1 3.2-3v-4.7l-3.9-2.5-2.4-2C261 25.6 327.6 7.1 398.3 7.1c36.3 0 71.6 5.1 105 14.3l-2.9 1.8-10.1 3h-5l-4.6-2-2.5 2.1-4.9 1.2-5.3 1.2v2.9l5.2 3 7.5 2.7 5 2.7 1.4 4.2 4.6 2.6 4.5.5 7.7 2.7 7.7 3.2 5 5.9 5.9 3.2 5.4.5 5.9 4.1 6.3 6.8 4.5 6.1 6.3 5.4 4.5 5.6 5.9 4.9h9.7l4.8 4.9 5.9 7 5.5 3.3h5.4l.8-5.1-.9-3.8 1.4-5.1 4.1.4 1.8 6.3-.5 6.8 2.7 3.2 7.6 3.6 3.9 3.2 4.7 3.2 3.8 3.6v4.5l.7 7.3 1.3 4.1 2.3 3.2 5.4 4.4v7l4.3 6.2v6.9l-2.1 7.2-3.4 5.9v7.6h7.6l3.7 3.3h11.5l2.1 4.7 2.5 6.7 4.7 5.9 2.3 10.3-8.6 4.9h-5.1l-3 2.8-.5 3.9 3.6 6.2 4.1 9 5.9 6.8 5.4 7.7 2.7 8.2 1.8 6.5 3.6 5.7 5.9 3.8h7.3l6.8-5.4 3.6-8.8.5-7.1V264l-1.4-2.8 3.9-5.4-1.7-4.5-3.1-4.5-2.2-5.9-.9-6.3-.4-10.9-3.2-2.3-3.2-1.8 1.4-6.3 3.6-2.7.5-5-.5-3.6 2.7-1.8 3.2 2.7 4.1 5.4 7.2 3.2 5.4 3.6 4.5 5 5 7.2 4.5 5.4 4.5-.5-2.3-6.3-5.1-10.4 5.2 4.5 3.1 5.9 3.2 4.5v4.3l3.9.6 2.6-6.3V215.1c8.7 14.5 17.5 31.6 23.4 47.8h-8.3l-5.4.5v6.5zM235.4 463.4l4.5 7h4.8l2.2-3.1V464l-2.8-1.3-3.4-.8h-2.5l-2.8 1.5zm9.8 15.7h-3.8l-3.1-.9-2.4.9v3.2l2.7 3.3 3.2 3.3h4.9v-6.5l-1.5-3.3zm15.8 53.2l-1.7-3.5-6.5-.8-3.4.8-2.5 3.5v2.2l3.8 4.3h9.3l1.1-4.1v-2.4zm13-10.9l3.3-4.9-2.6-2.1-4.2-.8-2.6-2-2.9-1.6-3.5-2.7-6.4-1.9-5.1-1.6-2.6-3.6-2.6-3.1-5.8-1.4-6.4-1.6h-16.2l-6.7 2.4-3.9 3.3-3.5 1.7v2.4l3.5 2.1 5.7-2.7 5.7-1.6h4.6l5.3 3.3h3.4l9.1 3.7 4.5 2.7 4.2 3.1 5.4 4.1 2.2 2.6h3.8l4.5-1.8 5.4 1.8h4.4zm32.8.3c-4.2.1-6.4-1-6.4-1l-4.5-2.5h-6.7s-4.1-1.3-6.3-.8c0 0-8.9-.5-4.5 4.1v3.3l-1.9 3-1.7 2.6 2.7 3H295.7l5.3-5.4h4.5l3.9-2.4c-.1-.1 1.5-4-2.6-3.9zm19.3 6.2l-1.5-1.5-1.7-.7h-6.5v3.3l4.9 4.3h4.9v-5.4zm25.1 2.4l-1.1-1.3-3.5-1.1h-2.1l-4.3-2.2v3.3l4.3 2.7 6.7-1.4zm5.2 12.8h3.3l-1.6-2.4-2.5-1.9h-2.4l-1.7 1.9 2.5 2.4h2.4zm8.3 18.5l-3.2-2.9-3.9 1.3v4.8h6.5l.6-3.2zm.1-9.2l-1.9-2.8h-3.2l-2.4 2.8 2.4 2.6h3.3l1.8-2.6zm.3-291.2l-2.4-3.5-3.6-3.8.5-3.2-.6-3.8-1.2-2.2-2.9-.3-5.6-1.5-1.7-1.8-.6-2.6h-3.4l-3-1.9-3.5 1.9v5.4s1.4 5.5-3 10l-2.4 4.8v5.8s-2.2 6.5 0 6.5h5.4s4.2-9.1 12.2-5.2l3.8 3.3 3.8 1.9h7.2l1.1-3.3v-6.5zM376 564.8l-3.2-3.4-.7 3.1 1.6 4.6h2.2v-4.3zM343 32.4l.4-2.2h7.3l5.4-1.3 4.5 1.2 9-.6 9.5.8 9.5.4 8.3-1.4 6.6-4.9-15.8-1.9-4.1 1.8-12.6 1-18.1-2.3-6.3-3-5.4-1-5 1.8-3.6 6.2h-6.3l-9 6.2-5 1.5-7.7 2.6-10 5.4-10 3.2c-12.2-.5-9.5 7.7-13.1 6.8s-7.7 6.4-9 6.4c-1.4 0 12.7 4.7 12.7 4.7l3.2-2h9.9l12.1-1.5 8.5-8 3.8.3 3.5-3.9v1.9l5.4-1.9v3.5l2.2 5.2v4.1l3.2 7.7 6.1 5.9-3.1 4.2 2.6 6.2c10.9 2.7 2.1 13.1 2.1 13.1v7.3l4.1 5 4.8 11.8s8.7 11.8 11 15.5 15.9 9.7 15.9 9.7l5.4 3.9h4.4c6.6 0 5.6-5.1 5.6-5.1-2.7-5.9-.5-42.3-.5-42.3l7.7-7.4c-3.1-2.3-3-7.3-.7-6.9 2.4.5 9.5-13.2 9.5-13.2v-6.5h-.6c2.3-9.8-12-10.7-12-10.7.5-5.9-9.2-7.7-9.2-7.7l2.7-4-3.2-3.7s-8.6.4-10-2.7-8.6-4.1-8.6-4.1l-10-2.9-8-2.2zm157.4 60.9l-3.2-2.9-2.3-3.6-9-5.4s-6.9-4.7-10 0c0 0-.9 2.7 0 5.4 0 0-9.5-2.7-10.9 0 0 0-9.5 4.1 2.3 6.8 0 0 5 6.8 8.6 6.8 0 0 .5 4.5 9.5 5 .1-.1 16.8 4 15-12.1zM632.1 160l-2.2-4.4s-5.4-.5-5.8-5l-1.9-3.3h-3.3l-2.8-4.8-3.5-2.8-3.6-1.9-6.4-4-6.4-3.6-2.6-3.6-5.1-3.5-7-4.5-5.1-2.2-4.2-1.6s-5.8-5.1-6.4 3.8l-2.9 3.2 1.3 3.6 4.8 1.9 8.9 3.8 2.7 2.6.4 8v4.6l1.4 5.5-.1 5.9 3.7 3.8h4.8l4 3.9 3.5 3.1 1.3 5.1 4.2 2h2.3l1.3-5.1s8-8.6 10.6.4c0 0-1.9 4 0 4.4 1.9.3 5.1 2.5 5.1 2.5l4.2-2 3.5-7.1c-.3-.1 4.5-2.6 1.3-8.7z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.sketch {
+  position: absolute;
+  top: 70px;
+  right: 5px;
+}
+
+.tree-view {
+  height: 100%;
+}
+
+/* tiles */
+
+html.react,
+.react body {
+  height: 100%;
+}
+
+.tiles {
+  height: calc(100% - 65px);
+  width: 100%;
+  position: relative;
+}
+
+.left-tile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 33.33%;
+  height: 100%;
+}
+
+.top-tile {
+  position: absolute;
+  top: 0;
+  left: 33.33%;
+  width: 66.66%;
+  height: 60%;
+}
+
+.bottom-tile {
+  position: absolute;
+  top: 60%;
+  left: 33.33%;
+  height: 40%;
+}
+
+.govuk-accordion__icon--left {
+  left: -26px;
+}
+
+.govuk-checkboxes--small .govuk-checkboxes__item {
+  float: none;
+}
+
+.govuk-header__container {
+  border: none;
+  margin-bottom: 0;
+}
+
+.govuk-header {
+  border: none;
+}
+
+.gov-azure {
+  color: #005ea5;
+}
+
+.gov-text-secondary {
+  color: #6f777b;
+}
+
+.b--gov-azure {
+  border-color: #005ea5;
+}
+
+.bg-gov-azure {
+  background-color: #005ea5;
+}
+
+.wrapper {
+  height: calc(100% - 63px);
+}
+
+.h10p {
+  height: 10px;
+}
+.header-wrapper {
+  min-height: 120px;
+}
+.map-wrapper {
+  padding-top: 58px;
+}
+.divLegend {
+  max-height: 80%;
+}
+
+.govuk-link:active g {
+  fill: #2b8cc4
+}
+.govuk-link:visited g {
+  fill: #4c2c92;
+}
+.govuk-link:hover g {
+  fill: #2b8cc4;
+}
+.vhcenter {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+.vcenter {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mapdata + .mapdata {
+  border-top: 1px solid #ccc;
+}
+.policy-content > p:first-of-type {
+  margin-top: 0
+}
+
+// Tachyons
+.o-50 {
+  opacity: 0.5;
+}
+.border-box {
+  box-sizing: border-box;
+}
+.v-mid {
+  vertical-align:middle;
+}
+.v-top {
+  vertical-align:top;
+}
+.z-3 {
+  z-index: 3;
+}
+.z-2 {
+  z-index: 2;
+}
+.z-1 {
+  z-index: 1;
+}
+.bg-white {
+  background: white;
+}
+.white {
+  color: white;
+}
+.bg-black {
+  background: black;
+}
+.bg-white-80 {
+  background: rgba( 255, 255, 255, .8 )
+}
+.h1 {
+  height:1rem;
+}
+.w1 {
+  width:1rem;
+}
+.h2 {
+  height:2rem;
+}
+.w2 {
+  width:2rem;
+}
+.h3 {
+  height:4rem;
+}
+.w3 {
+  width:4rem;
+}
+.h4 {
+  height:8rem;
+}
+.w4 {
+  width:8rem;
+}
+.db {
+  display: block;
+}
+.dib {
+  display: inline-block;
+}
+.bn {
+  border: none;
+}
+.bt {
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.bb {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.bw1 {
+  border-width:.125rem
+}
+.b--light-gray {
+  border-color: #eee;
+}
+.normal {
+  font-weight:normal
+}
+.pointer:hover {
+  cursor: pointer;
+}
+.dn {
+  display: none;
+}
+.h-100 {
+  height: 100%;
+}
+.h-70 {
+  height: 70%;
+}
+.h-60 {
+  height: 60%;
+}
+.h-50 {
+  height: 50%;
+}
+.h-40 {
+  height: 40%;
+}
+.h-30 {
+  height: 30%;
+}
+.w-100 {
+  width: 100%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-20 {
+  width: 20%;
+}
+.w-80 {
+  width: 80%;
+}
+.w-30 {
+  width: 30%;
+}
+.w-70 {
+  width: 70%;
+}
+.overflow-auto {
+  overflow: auto;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.b {
+  font-weight: bold;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.top-0 {
+  top: 0;
+}
+.left-0 {
+  left: 0;
+}
+.top-1 {
+  top: 1em;
+}
+.left-1 {
+  left: 1em;
+}
+.right-0 {
+  right: 0;
+}
+.right-1 {
+  right: 1em;
+}
+.bottom-1 {
+  bottom: 1rem;
+}
+.list {
+  list-style-type: none;
+}
+.pa0 {
+  padding: 0;
+}
+.pa1 {
+  padding: 0.25rem;
+}
+.pa2 {
+  padding: 0.5rem;
+}
+.pa3 {
+  padding: 1rem;
+}
+.pa4 {
+  padding: 2rem;
+}
+.pa5 {
+  padding: 4rem;
+}
+.pa6 {
+  padding: 8rem;
+}
+.pa7 {
+  padding: 16rem;
+}
+.pl0 {
+  padding-left: 0;
+}
+.pl1 {
+  padding-left: 0.25rem;
+}
+.pl2 {
+  padding-left: 0.5rem;
+}
+.pl3 {
+  padding-left: 1rem;
+}
+.pl4 {
+  padding-left: 2rem;
+}
+.pl5 {
+  padding-left: 4rem;
+}
+.pl6 {
+  padding-left: 8rem;
+}
+.pl7 {
+  padding-left: 16rem;
+}
+.pr0 {
+  padding-right: 0;
+}
+.pr1 {
+  padding-right: 0.25rem;
+}
+.pr2 {
+  padding-right: 0.5rem;
+}
+.pr3 {
+  padding-right: 1rem;
+}
+.pr4 {
+  padding-right: 2rem;
+}
+.pr5 {
+  padding-right: 4rem;
+}
+.pr6 {
+  padding-right: 8rem;
+}
+.pr7 {
+  padding-right: 16rem;
+}
+.pb0 {
+  padding-bottom: 0;
+}
+.pb1 {
+  padding-bottom: 0.25rem;
+}
+.pb2 {
+  padding-bottom: 0.5rem;
+}
+.pb3 {
+  padding-bottom: 1rem;
+}
+.pb4 {
+  padding-bottom: 2rem;
+}
+.pb5 {
+  padding-bottom: 4rem;
+}
+.pb6 {
+  padding-bottom: 8rem;
+}
+.pb7 {
+  padding-bottom: 16rem;
+}
+.pt0 {
+  padding-top: 0;
+}
+.pt1 {
+  padding-top: 0.25rem;
+}
+.pt2 {
+  padding-top: 0.5rem;
+}
+.pt3 {
+  padding-top: 1rem;
+}
+.pt4 {
+  padding-top: 2rem;
+}
+.pt5 {
+  padding-top: 4rem;
+}
+.pt6 {
+  padding-top: 8rem;
+}
+.pt7 {
+  padding-top: 16rem;
+}
+.pv0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.pv1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.pv2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.pv3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.pv4 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.pv5 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.pv6 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.pv7 {
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
+.ph0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.ph1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.ph2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.ph3 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.ph4 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.ph5 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.ph6 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+.ph7 {
+  padding-left: 16rem;
+  padding-right: 16rem;
+}
+.ma0 {
+  margin: 0;
+}
+.ma1 {
+  margin: 0.25rem;
+}
+.ma2 {
+  margin: 0.5rem;
+}
+.ma3 {
+  margin: 1rem;
+}
+.ma4 {
+  margin: 2rem;
+}
+.ma5 {
+  margin: 4rem;
+}
+.ma6 {
+  margin: 8rem;
+}
+.ma7 {
+  margin: 16rem;
+}
+.ml0 {
+  margin-left: 0;
+}
+.ml1 {
+  margin-left: 0.25rem;
+}
+.ml2 {
+  margin-left: 0.5rem;
+}
+.ml3 {
+  margin-left: 1rem;
+}
+.ml4 {
+  margin-left: 2rem;
+}
+.ml5 {
+  margin-left: 4rem;
+}
+.ml6 {
+  margin-left: 8rem;
+}
+.ml7 {
+  margin-left: 16rem;
+}
+.mr0 {
+  margin-right: 0;
+}
+.mr1 {
+  margin-right: 0.25rem;
+}
+.mr2 {
+  margin-right: 0.5rem;
+}
+.mr3 {
+  margin-right: 1rem;
+}
+.mr4 {
+  margin-right: 2rem;
+}
+.mr5 {
+  margin-right: 4rem;
+}
+.mr6 {
+  margin-right: 8rem;
+}
+.mr7 {
+  margin-right: 16rem;
+}
+.mb0 {
+  margin-bottom: 0;
+}
+.mb1 {
+  margin-bottom: 0.25rem;
+}
+.mb2 {
+  margin-bottom: 0.5rem;
+}
+.mb3 {
+  margin-bottom: 1rem;
+}
+.mb4 {
+  margin-bottom: 2rem;
+}
+.mb5 {
+  margin-bottom: 4rem;
+}
+.mb6 {
+  margin-bottom: 8rem;
+}
+.mb7 {
+  margin-bottom: 16rem;
+}
+.mt0 {
+  margin-top: 0;
+}
+.mt1 {
+  margin-top: 0.25rem;
+}
+.mt2 {
+  margin-top: 0.5rem;
+}
+.mt3 {
+  margin-top: 1rem;
+}
+.mt4 {
+  margin-top: 2rem;
+}
+.mt5 {
+  margin-top: 4rem;
+}
+.mt6 {
+  margin-top: 8rem;
+}
+.mt7 {
+  margin-top: 16rem;
+}
+.mv0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.mv1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.mv2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.mv3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.mv4 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.mv5 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.mv6 {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+.mv7 {
+  margin-top: 16rem;
+  margin-bottom: 16rem;
+}
+.mh0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+.mh1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+.mh2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.mh3 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.mh4 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.mh5 {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.mh6 {
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+.mh7 {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.flex {
+  display: flex;
+}
+.inline-flex {
+  display: inline-flex;
+}
+
+/* 1. Fix for Chrome 44 bug.
+ * https://code.google.com/p/chromium/issues/detail?id=506893 */
+.flex-auto {
+  flex: 1 1 auto;
+  min-width: 0; /* 1 */
+  min-height: 0; /* 1 */
+}
+
+.flex-none {
+  flex: none;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+.items-end {
+  align-items: flex-end;
+}
+.items-center {
+  align-items: center;
+}
+.items-baseline {
+  align-items: baseline;
+}
+.items-stretch {
+  align-items: stretch;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+.self-end {
+  align-self: flex-end;
+}
+.self-center {
+  align-self: center;
+}
+.self-baseline {
+  align-self: baseline;
+}
+.self-stretch {
+  align-self: stretch;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+
+.content-start {
+  align-content: flex-start;
+}
+.content-end {
+  align-content: flex-end;
+}
+.content-center {
+  align-content: center;
+}
+.content-between {
+  align-content: space-between;
+}
+.content-around {
+  align-content: space-around;
+}
+.content-stretch {
+  align-content: stretch;
+}
+
+.order-0 {
+  order: 0;
+}
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+.order-3 {
+  order: 3;
+}
+.order-4 {
+  order: 4;
+}
+.order-5 {
+  order: 5;
+}
+.order-6 {
+  order: 6;
+}
+.order-7 {
+  order: 7;
+}
+.order-8 {
+  order: 8;
+}
+.order-last {
+  order: 99999;
+}
+
+.vh-25 {
+  height: 25vh;
+}
+.vh-50 {
+  height: 50vh;
+}
+.vh-75 {
+  height: 75vh;
+}
+.underline {
+  text-decoration:underline
+}
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  /* 1 */
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  /* 2 */
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+  /* 3 */
+}
+
+/*
+	Use in conjunction with .sr-only to only display content when it's focused.
+	@note Useful for skip links
+	@see http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+	@note Based on a HTML5 Boilerplate technique, included in Bootstrap
+	@note Fixed a bug with position: static on iOS 10.0.2 + VoiceOver
+		@author Sylvain Pigeard
+		@see https://github.com/twbs/bootstrap/issues/20732
+*/
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+  clip: auto !important;
+  -webkit-clip-path: none !important;
+  clip-path: none !important;
+  height: auto !important;
+  margin: auto !important;
+  overflow: visible !important;
+  width: auto !important;
+  white-space: normal !important;
+}
+
+
+.showTooltip {
+  display:block;
+}
+
+.hideTooltip {
+  display:none;
+}

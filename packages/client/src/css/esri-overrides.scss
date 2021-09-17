@@ -1,0 +1,7 @@
+
+// hide the boder on the last item in TOC
+.esri-layer-list{
+    .esri-layer-list__item:last-child {
+        border-bottom: none !important;
+    } 
+}

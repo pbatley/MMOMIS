@@ -1,0 +1,6 @@
+node_modules/
+dist/
+infra/
+azure-pipelines.yaml
+.git
+packages/**/node_modules

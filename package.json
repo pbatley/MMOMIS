@@ -1,0 +1,30 @@
+{
+  "name": "mmo-explore-marine-plans",
+  "version": "1.0.0",
+  "description": "GOV.UK front end service built using Node.js for the Explore Marine Plans digital service",
+  "author": "Marine Management Organisation",
+  "license": "OGL-UK-3.0",
+  "bugs": {
+    "url": "https://github.com/DEFRA/mmo-explore-marine-plans/issues"
+  },
+  "homepage": "https://explore-marine-plans.marineservices.org.uk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DEFRA/mmo-explore-marine-plans.git"
+  },
+  "scripts": {
+    "build": "lerna run build",
+    "test": "lerna run test",
+    "bootstrap": "npm --prefix packages/client ci && npm --prefix packages/server ci",
+    "test:e2e": "cd packages/server && npm run test",
+    "fmt": "prettier 'packages/**/*.{ts,tsx,json}' --list-different",
+    "fmt!": "prettier 'packages/**/*.{ts,tsx,json}' --write",
+    "dev": "lerna run dev"
+  },
+  "devDependencies": {
+    "lerna": "3.15.0",
+    "prettier": "1.17.0"
+  },
+  "private": true,
+  "dependencies": {}
+}

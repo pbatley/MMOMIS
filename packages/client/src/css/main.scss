@@ -1,0 +1,140 @@
+$icomoon-font-path: "~arcgis-js-api/themes/base/icons/fonts" !default;
+
+// Widgets (sorted alphabetically)
+$include_AreaMeasurement3D: false !default;
+$include_Attribution: true !default;
+$include_BasemapGallery: false !default;
+$include_BasemapToggle: false !default;
+$include_Bookmarks: false !default;
+$include_BrowseItems: false !default;
+$include_ColorPicker: false !default;
+$include_Compass: true !default;
+$include_CoordinateConversion: false !default;
+$include_DatePicker: false !default;
+$include_Directions: false !default;
+$include_Expand: true !default;
+$include_Feature: false !default;
+$include_FeatureForm: false !default;
+$include_HorizontalSlider: false !default;
+$include_LayerList: false !default;
+$include_Legend: true !default;
+$include_NavigationToggle: false !default;
+$include_Print: false !default;
+$include_DirectLineMeasurement3D: false !default;
+$include_Popup: true !default;
+$include_RasterSymbologyEditor: false !default;
+$include_RendererSlider: false !default;
+$include_ScaleBar: false !default;
+$include_Search: false !default;
+$include_Slice: false !default;
+$include_Spinner: true !default;
+$include_Tags: false !default;
+$include_FeatureTemplates: false !default;
+$include_TimePicker: false !default;
+$include_Zoom: true !default;
+
+
+@import "node_modules/govuk-frontend/all.scss";
+@import "esri-overrides";
+@import "~arcgis-js-api/css/main.css";
+@import "~arcgis-js-api/themes/light/main.scss";
+@import "index";
+
+// // GOV.UK Setting
+// @import 'node_modules/govuk-frontend/settings/assets';
+// @import 'node_modules/govuk-frontend/settings/compatibility';
+// @import 'node_modules/govuk-frontend/settings/global-styles';
+// @import 'node_modules/govuk-frontend/settings/ie8';
+// @import 'node_modules/govuk-frontend/settings/media-queries';
+// @import 'node_modules/govuk-frontend/settings/colours-palette';
+// @import 'node_modules/govuk-frontend/settings/colours-organisations';
+// @import 'node_modules/govuk-frontend/settings/colours-applied';
+// @import 'node_modules/govuk-frontend/settings/spacing';
+// @import 'node_modules/govuk-frontend/settings/measurements';
+// @import 'node_modules/govuk-frontend/settings/typography-font-families';
+// @import 'node_modules/govuk-frontend/settings/typography-font';
+// @import 'node_modules/govuk-frontend/settings/typography-responsive';
+
+// // GOV.UK Tools
+// @import 'node_modules/govuk-frontend/tools/compatibility';
+// @import 'node_modules/govuk-frontend/tools/exports';
+// @import 'node_modules/govuk-frontend/tools/font-url';
+// @import 'node_modules/govuk-frontend/tools/ie8';
+// @import 'node_modules/govuk-frontend/tools/iff';
+// @import 'node_modules/govuk-frontend/tools/image-url';
+// @import 'node_modules/govuk-frontend/tools/px-to-em';
+// @import 'node_modules/govuk-frontend/tools/px-to-rem';
+
+// // GOV.UK Helpers
+// @import 'node_modules/govuk-frontend/helpers/clearfix';
+// @import 'node_modules/govuk-frontend/helpers/colour';
+// @import 'node_modules/govuk-frontend/helpers/device-pixels';
+// @import 'node_modules/govuk-frontend/helpers/focusable';
+// @import 'node_modules/govuk-frontend/helpers/font-faces';
+// @import 'node_modules/govuk-frontend/helpers/grid';
+// @import 'node_modules/govuk-frontend/helpers/links';
+// @import 'node_modules/govuk-frontend/helpers/media-queries';
+// @import 'node_modules/govuk-frontend/helpers/shape-arrow';
+// @import 'node_modules/govuk-frontend/helpers/spacing';
+// @import 'node_modules/govuk-frontend/helpers/typography';
+// @import 'node_modules/govuk-frontend/helpers/visually-hidden';
+
+// // GOV.UK Core
+// @import 'node_modules/govuk-frontend/core/links';
+// @import 'node_modules/govuk-frontend/core/lists';
+// @import 'node_modules/govuk-frontend/core/template';
+// @import 'node_modules/govuk-frontend/core/typography';
+// @import 'node_modules/govuk-frontend/core/section-break';
+// @import 'node_modules/govuk-frontend/core/global-styles';
+
+// // GOV.UK Objects
+// @import 'node_modules/govuk-frontend/objects/form-group';
+// @import 'node_modules/govuk-frontend/objects/grid';
+// @import 'node_modules/govuk-frontend/objects/main-wrapper';
+// @import 'node_modules/govuk-frontend/objects/width-container';
+
+// // GOV.UK Components
+// // @import 'node_modules/govuk-frontend/components/accordion/accordion';
+// // @import "node_modules/govuk-frontend/components/back-link/back-link";
+// // @import "node_modules/govuk-frontend/components/breadcrumbs/breadcrumbs";
+// @import 'node_modules/govuk-frontend/components/button/button';
+// @import 'node_modules/govuk-frontend/components/checkboxes/checkboxes';
+// // @import "node_modules/govuk-frontend/components/character-count/character-count";
+// @import 'node_modules/govuk-frontend/components/summary-list/summary-list';
+// // @import "node_modules/govuk-frontend/components/date-input/date-input";
+// // @import "node_modules/govuk-frontend/components/details/details";
+// // @import "node_modules/govuk-frontend/components/error-message/error-message";
+// // @import "node_modules/govuk-frontend/components/error-summary/error-summary";
+// // @import "node_modules/govuk-frontend/components/fieldset/fieldset";
+// // @import "node_modules/govuk-frontend/components/file-upload/file-upload";
+// @import 'node_modules/govuk-frontend/components/footer/footer';
+// // @import "node_modules/govuk-frontend/components/hint/hint";
+// @import 'node_modules/govuk-frontend/components/header/header';
+// @import 'node_modules/govuk-frontend/components/input/input';
+// // @import "node_modules/govuk-frontend/components/inset-text/inset-text";
+// // @import "node_modules/govuk-frontend/components/label/label";
+// // @import "node_modules/govuk-frontend/components/panel/panel";
+// // @import "node_modules/govuk-frontend/components/phase-banner/phase-banner";
+// @import 'node_modules/govuk-frontend/components/tabs/tabs';
+// // @import "node_modules/govuk-frontend/components/tag/tag";
+// // @import "node_modules/govuk-frontend/components/radios/radios";
+// // @import "node_modules/govuk-frontend/components/select/select";
+// @import 'node_modules/govuk-frontend/components/skip-link/skip-link';
+// // @import "node_modules/govuk-frontend/components/table/table";
+// // @import "node_modules/govuk-frontend/components/textarea/textarea";
+// // @import "node_modules/govuk-frontend/components/warning-text/warning-text";
+
+// // GOV.UK utilities
+// @import 'node_modules/govuk-frontend/utilities/clearfix';
+// @import 'node_modules/govuk-frontend/utilities/visually-hidden';
+
+// // GOV.UK Overrides
+// @import 'node_modules/govuk-frontend/overrides/display';
+// @import 'node_modules/govuk-frontend/overrides/spacing';
+// @import 'node_modules/govuk-frontend/overrides/typography';
+// @import 'node_modules/govuk-frontend/overrides/width';
+
+// @import 'esri-overrides';
+// @import '~arcgis-js-api/css/main.css';
+// @import '~arcgis-js-api/themes/light/main.scss';
+// @import 'index';

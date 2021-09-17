@@ -1,0 +1,65 @@
+{
+  "name": "@mmo-explore-marine-plans/frontend",
+  "version": "1.0.0",
+  "description": "GOV.UK front end service built using Node.js for the Explore Marine Plans digital service",
+  "author": "Marine Management Organisation",
+  "license": "OGL-UK-3.0",
+  "bugs": {
+    "url": "https://github.com/DEFRA/mmo-explore-marine-plans-frontend/issues"
+  },
+  "homepage": "https://explore-marine-plans.marineservices.org.uk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DEFRA/mmo-explore-marine-plans-frontend.git"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --history-api-fallback --mode development --open",
+    "build": "webpack --mode production && tsc --build .",
+    "serve": "webpack-dev-server --history-api-fallback --mode production --open --https --compress",
+    "servehttp": "webpack-dev-server --history-api-fallback --mode production --open --http --compress",
+    "lint": "prettier '{src,tests,server}/**/*.{ts,tsx,json}' --list-different",
+    "fmt": "prettier '{src,tests,server}/**/*.{ts,tsx,json}' --write",
+    "test": "ts-node -O '{\"module\":\"commonjs\"}' --files node_modules/tape/bin/tape 'src/**/test.ts' 'src/**/*.test.ts'",
+    "dev": "webpack --mode development --watch"
+  },
+  "dependencies": {
+    "@arcgis/webpack-plugin": "4.11.0",
+    "@tippy.js/react": "2.2.2",
+    "@types/arcgis-js-api": "4.11.0",
+    "@types/puppeteer": "1.12.3",
+    "@types/react": "16.8.2",
+    "@types/react-dom": "16.8.0",
+    "@types/sinon": "5.0.7",
+    "arcgis-js-api": "4.11.1",
+    "clean-webpack-plugin": "1.0.0",
+    "css-loader": "1.0.1",
+    "deni-react-treeview": "0.2.16",
+    "govuk-frontend": "2.11.0",
+    "html-loader": "0.5.5",
+    "ky": "0.11.0",
+    "node-sass": "4.12.0",
+    "react": "16.8.1",
+    "react-dom": "16.8.1",
+    "react-ga": "2.5.7",
+    "react-testing-library": "5.5.3",
+    "resolve-url-loader": "2.3.0",
+    "sass-loader": "7.1.0",
+    "sinon": "7.1.1",
+    "style-loader": "0.23.1",
+    "terser-webpack-plugin": "1.1.0",
+    "ts-loader": "5.3.1",
+    "ts-node": "8.0.3",
+    "typescript": "3.4.1",
+    "webpack": "4.29.2",
+    "webpack-cli": "3.1.1",
+    "webpack-dev-server": "3.1.10",
+    "workbox-webpack-plugin": "3.6.3"
+  },
+  "arcgis": {
+    "type": "react"
+  },
+  "devDependencies": {
+    "@types/tape": "4.2.33",
+    "tape": "4.10.2"
+  }
+}
